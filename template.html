@@ -1,7 +1,43 @@
-<!-- 
-// YS Space Widget
-//	Embed the JS & CSS at end of your HTML
-//
+<!-- /**
+ * Space Widgets
+ * Released on: 2016-12-22
+ * Author: YS
+ * 
+ * How to use:
+ *    <div class="spaces_widget" data-widget="#search_tag" data-seq="1000"></div>
+ *    
+ *    All DIV with class "spaces_widget" will be reloaded by this pluggin.
+ *    Json data will be loaded from "https://www.hachi.tech/api/Spaces/search_tag/seq"
+ *    
+ *    Original Template File: assets/plugins/space-widgets.html
+ *    
+ * How it works:
+ *    1. Elements with class spaces_widget are loaded
+ *    2. API call to Spaces to look for data with corresponding "search_tag"
+ *    3. (genMainSpaceTpl) Load respective div template for the "space_type", add an unique LAYER_ID for every space
+ *    4. (genSpace-) Draw the objects and append to LAYER_ID
+ *    4a. If object is item, 2nd api call for item info will be made.
+ */
 // -->
+<h1>Space Widget</h1>
+
+<h3>Step 1: Embed script in HTML</h3>
+<p>Embed following to your page</p>
+<pre>
 <script src="https://raw.githubusercontent.com/whyys/space-widgets/master/assets/space-widget.js"></script>
 <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/whyys/space-widgets/master/assets/space-widget.css" media="screen" />
+</pre>
+
+<h3>Step 2: Add DIV layer for content to load</h3>
+<pre>
+<div class="spaces_widget" data-widget="#search_tag" data-seq="1000"></div>
+</pre>
+
+<h3>Step 3: Deploy API to output JSON content</h3>
+<p>(Refer to sample.json)</p>
+
+<h4>Other alterations:</h4>
+<p>- Space templates</p>
+
+<h5>Improvements:</h5>
+<p>- Dynamic content key-name</p>
