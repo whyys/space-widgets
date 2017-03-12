@@ -23,10 +23,10 @@ var LOADING_CIRCLE = '<center><br><br><i class="fa fa-circle-o-notch fa-spin fa-
 var SpacesCarousel = [];
 
 if (typeof (SPACE_WIDGET_TEMPLATES) == "undefined") {
-    var SPACE_WIDGET_TEMPLATES = "https://www.hachi.tech/assets/plugins/space-widgets.html";
+    var SPACE_WIDGET_TEMPLATES = "https://whyys.github.io/space-widgets/space-widgets.html";
 }
 if (typeof (apiUrl) == "undefined") {
-    var apiUrl = "https://www.hachi.tech/api";
+    var apiUrl = "https://whyys.github.io/space-widgets/sample.json";
 }
 
 (function($){
